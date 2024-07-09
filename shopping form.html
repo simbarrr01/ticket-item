@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Ticket Booking</title>
+    <link rel="stylesheet" href="shopping forms.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">SKY FARE</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="items page.html">Items Page</a></li>
+                <li><a href="shopping form.html">Online Shopping Form</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Airplane Ticket Booking</h1>
+        <div class="ticket-options">
+            <div class="ticket">
+                <h2>Economic Class</h2>
+                <p>Price: $200</p>
+                <button onclick="addToBasket('Economic Class', 200)">Add to Basket</button>
+            </div>
+            <div class="ticket">
+                <h2>Business Class</h2>
+                <p>Price: $500</p>
+                <button onclick="addToBasket('Business Class', 500)">Add to Basket</button>
+            </div>
+            <div class="ticket">
+                <h2>First Class</h2>
+                <p>Price: $1000</p>
+                <button onclick="addToBasket('First Class', 1000)">Add to Basket</button>
+            </div>
+        </div>
+        <div class="basket">
+            <h2>Shopping Basket</h2>
+            <ul id="basket-items"></ul>
+            <p id="total-price">Total: $0</p>
+            <button id="checkout" onclick="checkout()">Checkout</button>
+        </div>
+        <div class="payment" id="payment-section" style="display: none;">
+            <h2>Payment Method</h2>
+            <form id="payment-form" onsubmit="processPayment(event)">
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" name="card-name" required><br>
+                <span class="error" id="error-card-name"></span>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required><br>
+                <span class="error" id="error-card-number"></span>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required><br>
+                <span class="error" id="error-expiry-date"></span>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br>
+                <span class="error" id="error-cvv"></span>
+
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

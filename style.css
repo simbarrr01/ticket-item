@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(186 174 174);
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;   
+
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    color: black;
+    padding: 10px;
+}
+
+p,
+ul {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+ol{
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 30px;
+    list-style: none;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 500px;
+    width: 100vw;
+    /* margin-left: 350px; */
+    margin-top: 20px;
+
+}
+
+@keyframes slide_animation {
+    0% {left: 0;}
+    33.33% {left: -100vw;}
+    66.67% {left: -200vw;}
+    100% {left: 0;}
+ }
+ 
+ .slide-images {
+     width: 1200px; 
+     height: 800px;
+     margin: 0 auto; 
+     position: relative;
+     overflow: hidden; 
+ }
+ 
+ .slider1, .slider2, .slider3 {
+     position: absolute;
+     width: 100%; 
+     height: 100%;
+     top: 0;
+     left: 0;
+ }
+ 
+ .slider1 {
+     background-image: url(first\ class.png);
+     left: 0vw;
+     animation: slide_animation 10s infinite alternate;
+ }
+ 
+ .slider2 {
+     background-image: url(business\ 2.png);
+     left: -100vw;
+     animation: slide_animation 10s infinite alternate;
+     animation-delay: 5s; 
+ }
+ 
+ .slider3 {
+     background-image: url(economy2.png);
+     left: -200vw;
+     animation: slide_animation 10s infinite alternate;
+     animation-delay: 10s; 
+ }
+ 
+
+.img-container{
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    float: left;
+}
+a:hover{
+    color:black;
+}
+header{
+    position: relative; 
+    padding: 0 2rem;
+    background-color: #ffffff;
+}
+
+.navbar {
+   
+    /* height: 60px; */
+    width: 100%;
+    margin: 25px;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.navbar .logo{
+
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding:40px;
+}
+
+.navbar a {
+    color: #000;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

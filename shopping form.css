@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.ticket {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 30%;
+    text-align: center;
+}
+
+.ticket h2 {
+    margin-top: 0;
+}
+
+.ticket button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket button:hover {
+    background: #0056b3;
+}
+
+.cart {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total-price {
+    font-weight: bold;
+}

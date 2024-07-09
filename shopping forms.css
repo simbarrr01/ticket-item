@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ticket-options, .basket, .payment {
+    margin-bottom: 20px;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.ticket button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.ticket button:hover {
+    background: #0056b3;
+}
+
+.basket {
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#basket-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#basket-items li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#basket-items button {
+    padding: 5px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#basket-items button:hover {
+    background: #c82333;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#checkout {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#checkout:hover {
+    background: #218838;
+}
+
+.payment {
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+.payment label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.payment input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.payment button:hover {
+    background: #218838;
+}
+
+.payment .error {
+    color: red;
+    margin-top: 5px;
+}
+
+/* Navbar Styles */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ticket-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket {
+        width: 80%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links li {
+        margin: 10px 0;
+    }
+}

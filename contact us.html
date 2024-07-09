@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body class="body" style="background-image: url(background1.jpg);">
+  <div class="container">
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a>
+          <div class="sub-home">
+            <ul>
+              <li><a href="index.html#about-us">About Us</a></li>
+              <li><a href="index.html#our-services">Our Services</a></li>
+              
+            </ul>
+          </div>
+        </li>
+        <li><a href="items page.html">Items Page</a></li>
+        <li><a href="shopping form.html">Online Shopping form</a></li>
+        <li class="active"><a href="contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="contact-area">
+      <form>
+        <h1>Contact Us</h1>
+        <input type="text" id="name" class="input-field" placeholder="First Name (max 15 characters)" pattern="[A-Za-z]{1,15}" required />
+        <input type="text" id="surname" class="input-field" placeholder="Last Name (max 20 characters)" pattern="[A-Za-z]{1,20}" required />
+        <input type="tel" id="phone" class="input-field" placeholder="Phone Number (XXX-XXXXXXX)" pattern="[0-9]{3}-[0-9]{7}" required />
+        <input type="email" id="email" class="input-field" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+        <textarea type="text" id="message" class="input-field textarea-field" placeholder="Message (max 300 characters)" maxlength="300" required></textarea>
+        <button type="submit" class="btn">Send Your Comment</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
